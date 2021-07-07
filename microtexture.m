@@ -6,8 +6,8 @@ cs = {'notIndexed', crystalSymmetry('m-3m', [4.04 4.04 4.04], 'mineral', 'al')};
 ssO = specimenSymmetry('orthorhombic');
 
 % Input file
-datadir = '/Users/erlingaaresvarli/Desktop/HD Micro OSC files';
-file = fullfile(datadir, '3 - 784713-Midt-16mars-Pattern_sda.osc');
+datadir = 'folderpath';
+file = fullfile(datadir, 'filename');
 
 % Loading EBSD data
 ebsd = EBSD.load(file, cs, 'convertEuler2SpatialReferenceFrame','setting 2');
